@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.evento{
+    border: .1rem solid v.$grisClaro;
+    &__imagen{
+        width: 100%;
+    }
+    &__contenido{
+        padding: 2rem;
+    }
+    &__fecha{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    &__nombre{
+        color: v.$gris;
+        margin: 1rem 0;
+    }
+    &__author{
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+    &__author-imagen{
+        width: 12rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__organizado-texto,
+    &__organizado-nombre{
+        margin: .5rem;
+    }
+    &__organizado-texto{
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.notavif.notwebp .hero{
+    background-image: url(../img/hero.jpg);
+}
+.webp .hero{
+    background-image: url(../img/hero.webp);
+}
+.avif .hero{
+    background-image: url(../img/hero.avif);
+}
+.hero{
+    min-height: 60rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: v.$blanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__heading{
+        max-width: 60rem;       
+    }
+    &__enlace{
+        @include m.boton(v.$terciario,v.$blanco);
+    }
+}
